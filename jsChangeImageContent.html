@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JSHELPER</title>
+	<!-- GIO MOVER PROJECT -->
+</head>
+<body>
+
+<div class="copyright">
+	dummy content
+</div>
+
+<div class="l-footer">
+   dummy content 
+</div>
+
+</body>
+<script type="">
+function changeImage() {
+    var x = document.getElementsByClassName('copyright');
+    var w;
+    for (w = 0; w < x.length; w++) {
+    x[w].innerHTML= '<img src="http://24f.fab.myftpupload.com/wp-content/uploads/2017/04/moversBottomLogo.png">'; 
+    }
+};
+changeImage();
+
+function changeContent() {
+    var y = document.getElementsByClassName('l-footer');
+    var q;
+    for (q = 0; q < y.length; q++) {
+    y[q].innerHTML= '<div class="row"><div class="footer large-4 columns"><section class="block">© 2017 All Brunswick Van Lines All rights reserved.</section></div><div class="large-4 columns"></div><div class="copyright large-4 text-right columns"><img src="http://24f.fab.myftpupload.com/wp-content/uploads/2017/04/moversBottomLogo.png"></div></div>'; 
+    }
+}
+
+changeContent()
+</script>
+</html>
