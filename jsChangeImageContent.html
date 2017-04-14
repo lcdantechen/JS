@@ -43,14 +43,43 @@ function changeContent() {
 changeContent()
 
 
-function changeSocialContent() {
+function changeFlickrContent() {
     var pinterest = document.getElementsByClassName('flickr');
     var i;
     for (i = 0; i < pinterest.length; i++) {
-    pinterest[i].innerHTML= '<a href="#"><i class="fa fa-pinterest"></i></a>'; 
+    pinterest[i].innerHTML= '<a target="_blank" href="https://www.pinterest.com/allbrunswick/"><i class="fa fa-pinterest"></i></a>'; 
     }
-}
+};
+changeFlickrContent();
 
-changeSocialContent()
+
+function changeFacebookContent() {
+    var facebook = document.getElementsByClassName('facebook');
+    var i;
+    for (i = 0; i < facebook.length; i++) {
+    facebook[i].innerHTML= '<a target="_blank" href="https://www.facebook.com/allbrunswick/"><i class="fa fa-facebook"></i></a>'; 
+    }
+};
+
+changeFacebookContent();
+
+
+function changeTwitterContent() {
+    var twitter = document.getElementsByClassName('twitter');
+    var i;
+    for (i = 0; i < twitter.length; i++) {
+    twitter[i].innerHTML= '<a target="_blank" href="https://twitter.com/allbrunswick"><i class="fa fa-twitter"></i></a>'; 
+    }
+};
+
+changeTwitterContent();
+
+
+
+
+
+
+
+
 </script>
 </html>
