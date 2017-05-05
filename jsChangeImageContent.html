@@ -76,10 +76,24 @@ changeTwitterContent();
 
 
 
+function changeFlickrContent() {
+    var pinterest = document.getElementsByClassName('flickr');
+    var i;
+    for (i = 0; i < pinterest.length; i++) {
+    pinterest[i].innerHTML= '<a target="_blank" href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>'; 
+    }
+};
+changeFlickrContent();
 
 
-
-
+function changeVimeoContent() {
+    var vimeo = document.getElementsByClassName('vimeo');
+    var i;
+    for (i = 0; i < vimeo.length; i++) {
+    vimeo[i].innerHTML= ''; 
+    }
+};
+changeVimeoContent();
 
 </script>
 </html>
