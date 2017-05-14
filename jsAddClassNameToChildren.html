@@ -1,0 +1,100 @@
+<!-- getElementsByTagName can be used with  getElementById  -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+</head>
+<body>
+
+<div id="testimonialLinks01" >
+
+	<p><a href="http://24f.fab.myftpupload.com/wp-content/uploads/2017/04/160802_Jackson_ShipBottom.jpg">Hello world</a></p>
+<p>link: http://24f.fab.myftpupload.com/wp-content/uploads/2017/04/160802_Jackson_ShipBottom.jpg</p>
+
+</div>
+
+<div id="testimonialLinks02">
+
+	<p><a href="http://24f.fab.myftpupload.com/wp-content/uploads/2017/04/160802_Jackson_ShipBottom.jpg">Hello world</a></p>
+<p>link: http://24f.fab.myftpupload.com/wp-content/uploads/2017/04/160802_Jackson_ShipBottom.jpg</p>
+
+</div>
+
+<div id="testimonialLinks03">
+
+	<p><a href="http://24f.fab.myftpupload.com/wp-content/uploads/2017/04/160802_Jackson_ShipBottom.jpg">Hello world</a></p>
+<p>link: http://24f.fab.myftpupload.com/wp-content/uploads/2017/04/160802_Jackson_ShipBottom.jpg</p>
+
+</div>
+
+
+
+</body>
+
+<script type="text/javascript">
+
+
+
+
+function addClassNameToChildrenJS01() {
+    var testimonial = document.getElementById('testimonialLinks01').getElementsByTagName('a');
+    var i;
+    for (i = 0; i < testimonial.length; i++) {
+   testimonial[i].classList.add('testimonialLinks');
+    }
+};
+addClassNameToChildrenJS01();
+
+function addClassNameToChildrenJS02() {
+    var testimonial = document.getElementById('testimonialLinks02').getElementsByTagName('a');
+    var i;
+    for (i = 0; i < testimonial.length; i++) {
+   testimonial[i].classList.add('testimonialLinks');
+    }
+};
+addClassNameToChildrenJS02();
+
+function addClassNameToChildrenJS03() {
+    var testimonial = document.getElementById('testimonialLinks03').getElementsByTagName('a');
+    var i;
+    for (i = 0; i < testimonial.length; i++) {
+   testimonial[i].classList.add('testimonialLinks');
+    }
+};
+addClassNameToChildrenJS03();
+
+function changePartUrl() {
+    var testimonial = document.getElementsByClassName('testimonialLinks');
+    var i;
+    for (i = 0; i < testimonial.length; i++) {
+   var urlToBeChanged = testimonial[i].href;
+   var re = /24f.fab.myftpupload/
+   testimonial[i].href = urlToBeChanged.replace(re, "allbrunswick")
+
+    }
+};
+changePartUrl();
+
+
+
+
+
+
+
+
+/*
+	var url = window.location.href;
+
+window.location = url.replace(/24f.fab.myftpupload/, 'allbrunswick');
+*/
+
+
+</script>
+
+
+
+</html>
+
