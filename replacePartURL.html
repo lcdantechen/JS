@@ -1,0 +1,73 @@
+<!-- .href funciton only works when there is a href tag in the id or class that you can get.  -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+</head>
+<body>
+
+<div>
+
+	<p><a class="testimonialLinks" href="http://24f.fab.myftpupload.com/wp-content/uploads/2017/04/160802_Jackson_ShipBottom.jpg">Hello world</a></p>
+<p>link: http://24f.fab.myftpupload.com/wp-content/uploads/2017/04/160802_Jackson_ShipBottom.jpg</p>
+
+</div>
+
+<div>
+
+	<p><a class="testimonialLinks" href="http://24f.fab.myftpupload.com/wp-content/uploads/2017/04/160802_Jackson_ShipBottom.jpg">Hello world</a></p>
+<p>link: http://24f.fab.myftpupload.com/wp-content/uploads/2017/04/160802_Jackson_ShipBottom.jpg</p>
+
+</div>
+
+<div>
+
+	<p><a  class="testimonialLinks" href="http://24f.fab.myftpupload.com/wp-content/uploads/2017/04/160802_Jackson_ShipBottom.jpg">Hello world</a></p>
+<p>link: http://24f.fab.myftpupload.com/wp-content/uploads/2017/04/160802_Jackson_ShipBottom.jpg</p>
+
+</div>
+
+
+
+</body>
+
+<script type="text/javascript">
+
+
+
+
+function changePartUrl() {
+    var testimonial = document.getElementsByClassName('testimonialLinks');
+    var i;
+    for (i = 0; i < testimonial.length; i++) {
+   var urlToBeChanged = testimonial[i].href;
+   var re = /24f.fab.myftpupload/
+   testimonial[i].href = urlToBeChanged.replace(re, "allbrunswick")
+
+    }
+};
+changePartUrl();
+
+
+
+
+
+
+
+
+/*
+	var url = window.location.href;
+
+window.location = url.replace(/24f.fab.myftpupload/, 'allbrunswick');
+*/
+
+
+</script>
+
+
+
+</html>
+
