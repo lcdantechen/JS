@@ -129,7 +129,14 @@ function changeNoticeContent() {
 };
 changeNoticeContent();
 
-
+function changeFooterContent() {
+    var notification = document.getElementsByClassName('boximage-2');
+    var i;
+    for (i = 0; i < notification.length; i++) {
+    notification[i].innerHTML= '<div class="block-image"><a href="https://www.facebook.com/allbrunswick/"><img src="http://allbrunswick.com/wp-content/uploads/2017/06/newLogoFooter.png" alt="Image" /></a><h2 class="block-title"></h2><h2 class="block-title"></h2></div>'; 
+}
+};
+changeFooterContent();
 
 
 
