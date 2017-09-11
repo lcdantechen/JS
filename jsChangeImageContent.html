@@ -151,6 +151,16 @@ changeAnyContent();
 
 
 
+function changeLanContent() {
+    var notification = document.getElementsByClassName('bingoHeaderRight');
+    var i;
+    for (i = 0; i < notification.length; i++) {
+    notification[i].innerHTML= '<ul class="languageSwitch"><li><a class="qtranxs_flag_en qtranxs_flag_and_text EnglishLan" href="http://b0a.0e1.myftpupload.com/en/" title="English (en)"><span>English</span></a></li><li><a class="qtranxs_flag_vi qtranxs_flag_and_text VietnamLan" href="http://b0a.0e1.myftpupload.com/vi/" title="Tiếng Việt (vi)"><span>Tiếng Việt</span></a></li></ul>'; 
+}
+};
+changeLanContent();
+
+
 
 
 </script>
