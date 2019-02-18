@@ -174,6 +174,35 @@ changeTopBarContent();
 
 
 
+function changeSocialContent() {
+    var notification = document.getElementsByClassName('top-info');
+    var i;
+    for (i = 0; i < notification.length; i++) {
+    notification[i].innerHTML= '<div class="info-box"><div class="text-box"><a href="https://www.facebook.com/Spooky-Brook-Landscape-Design-773593602789800/"><span class="highlighted">Follow Us</span> <span class="social"> <i class="fa fa-facebook-official"></i> </span></a> </div></div><div class="info-box"><div class="icon-box"><i class="icon icon-Phone2"></i></div><div class="text-box"><p><span class="highlighted">732-873-0394</span> <br>spookybrook@aol.com</p> </div></div><div class="info-box"><div class="icon-box"><i class="icon icon-Timer"></i></div><div class="text-box"><p><span class="highlighted">Mon - Sat 9.00 - 19.00</span> <br>Sunday Closed</p> </div></div>'; 
+}
+};
+changeSocialContent();
+
+
+
+function changeVideoContent() {
+    var notification = document.getElementsByClassName('video-popup');
+    var i;
+    for (i = 0; i < notification.length; i++) {
+    notification[i].innerHTML= '<div class="modal fade video-popup-modal" id="video-popup-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"><div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-header"><h4 class="modal-title text-center" id="myModalLabel">Our Video Gallery</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body"><ul class="bxslider video-gallery" id="yt-player"><li><iframe width="600" height="400" src="https://www.youtube.com/embed/eNP6fw69pNw" allowfullscreen></iframe></li><li><iframe width="600" height="400" src="https://www.youtube.com/embed/eNP6fw69pNw" allowfullscreen></iframe></li><li><iframe width="600" height="400" src="https://www.youtube.com/embed/eNP6fw69pNw" allowfullscreen></iframe></li><li><iframe width="600" height="400" src="https://www.youtube.com/embed/eNP6fw69pNw" allowfullscreen></iframe></li></ul></div></div></div>'; 
+}
+};
+changeVideoContent();
+
+
+function changeTopBarContent() {
+    var notification = document.getElementsByClassName('header_top_left');
+    var i;
+    for (i = 0; i < notification.length; i++) {
+    notification[i].innerHTML= '<ul class="social-icons accent inline-list"><li class="flickr"><a href="http://www.flickr.com/allbrunswick/"><i class="fa fa-flickr"></i></a></li><li class="facebook"><a href="https://www.facebook.com/allbrunswick/"><i class="fa fa-facebook"></i></a></li><li class="twitter"><a href="https://twitter.com/allbrunswick/"><i class="fa fa-twitter"></i></a></li><li><span>License#PC00435</span></li></ul>'; 
+}
+};
+changeTopBarContent();
 
 
 </script>
